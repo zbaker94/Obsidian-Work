@@ -10,7 +10,7 @@ tags: clayton, class, react/reuse/composition
 		-  [[React Lifecycle]]
 	*  **Practical composition in React components**
 		-  [[Coding/React/Principles/Encapsulation|Encapsulation]]
-		-  Immutability
+		-  [[Coding/React/Principles/Immutability|Immutability]]
 		-  Partial application / Separation of concerns
 		-  Consistent patterns / naming
 	*  **Building simple components and composing them to create complex UI elements.**
