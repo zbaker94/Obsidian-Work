@@ -14,7 +14,7 @@ tags: clayton, class, react/reuse/composition
 		-  Partial application / Separation of concerns
 		-  Consistent patterns / naming
 	*  **Building simple components and composing them to create complex UI elements.**
-		- Example form
+		- [[Form Composition|Example form]]
 		- Reuse and Component Customization
 	* **Creating configurable reusable components**
 		- Best practices for balancing customization / configuration and ensuring reusability
