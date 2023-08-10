@@ -17,12 +17,8 @@ tags: clayton, class, react/reuse/composition
 		- [[Consistent Patterns and Coding Standards]]
 		- [[Form Composition|Example form]]
 	* **Creating configurable reusable components**
-		- Best practices for balancing customization / configuration and ensuring reusability
-			- 
-* **Hooks and composition**
-	- What is a react hook?
-	- The role hooks play in component composition
-	- Compose hooks to create reusable logic
+		- [[Best practices for balancing customization with configuration and ensuring reusability]]
+* [[Hooks and Composition]]
 * **Benefits of shared component libraries**
 	- Shared libraries to create consistent UX
 	- Shared libraries to create consistent DX
