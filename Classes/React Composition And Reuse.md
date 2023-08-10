@@ -3,7 +3,7 @@ tags: clayton, class, react/reuse/composition
 ---
 * **Reuse and Composition Introduction**
 	- [[Why is reuse and composition important in software development]]
-	-   Real world examples (?)
+	- [[Reusable vs Useful]]
 * **React Components and Composition**
 	-  React component basics review
 		-  [[Functional Components]]
@@ -12,12 +12,13 @@ tags: clayton, class, react/reuse/composition
 		-  [[Coding/React/Principles/Encapsulation|Encapsulation]]
 		-  [[Coding/React/Principles/Immutability|Immutability]]
 		-  [[Coding/React/Principles/Separation of Concerns|Separation of Concerns]]
-		-  Consistent patterns / naming
+		-  [[Consistent Patterns and Coding Standards]]
 	*  **Building simple components and composing them to create complex UI elements.**
+		- [[Consistent Patterns and Coding Standards]]
 		- [[Form Composition|Example form]]
-		- Reuse and Component Customization
 	* **Creating configurable reusable components**
 		- Best practices for balancing customization / configuration and ensuring reusability
+			- 
 * **Hooks and composition**
 	- What is a react hook?
 	- The role hooks play in component composition
