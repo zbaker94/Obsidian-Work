@@ -11,7 +11,7 @@ tags: clayton, class, react/reuse/composition
 	*  **Practical composition in React components**
 		-  [[Coding/React/Principles/Encapsulation|Encapsulation]]
 		-  [[Coding/React/Principles/Immutability|Immutability]]
-		-  Partial application / Separation of concerns
+		-  [[Coding/React/Principles/Separation of Concerns|Separation of Concerns]]
 		-  Consistent patterns / naming
 	*  **Building simple components and composing them to create complex UI elements.**
 		- [[Form Composition|Example form]]
