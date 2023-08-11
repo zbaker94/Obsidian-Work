@@ -6,8 +6,9 @@ tags: clayton, class, react/reuse/composition
 	- [[Reusable vs Useful]]
 * **React Components and Composition**
 	-  React component basics review
-		-  [[Functional Components]]
+		*  [[Functional Components]]
 		-  [[React Lifecycle]]
+		*  [[Hooks]] 
 	*  **Practical composition in React components**
 		-  [[Coding/React/Principles/Encapsulation|Encapsulation]]
 		-  [[Coding/React/Principles/Immutability|Immutability]]
