@@ -22,7 +22,7 @@ export default useJokes;
 ```js
 import "useEffect" from "react"
 
-const useEffectOnce = (callback, cleanup = () => {}) => {
+const useEffectOnce = (callback = () => {}, cleanup = () => {}) => {
 	useEffect(() => {
 		callback();
 		return cleanup() 
