@@ -1,0 +1,1 @@
+Toughbook resolution: 
