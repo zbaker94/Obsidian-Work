@@ -15,7 +15,7 @@ tags: clayton, class, react/reuse/composition
 		-  [[Coding/React/Principles/Separation of Concerns|Separation of Concerns]]
 	*  **Building simple components and composing them to create complex UI elements.**
 		- [[Consistent Patterns and Coding Standards]]
-		- [[Form Composition|Example form]]
+		- [[Form Example.excalidraw|Example form]]
 	* **Creating configurable reusable components**
 		- [[Best practices for balancing customization with configuration and ensuring reusability]]
 * [[Hooks and Composition]]
