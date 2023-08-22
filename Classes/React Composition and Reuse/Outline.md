@@ -19,7 +19,7 @@ tags: clayton, class, react/reuse/composition
 	* **Creating configurable reusable components**
 		- [[Best practices for balancing customization with configuration and ensuring reusability]]
 * [[Hooks and Composition]]
-* Layered architecture / incremental abstractions ( https://surma.dev/things/cost-of-convenience/ )
+* [[Layered Architecture|Layered architecture / incremental abstractions]]
 * **Benefits of shared component libraries**
 	- Shared libraries to create consistent UX
 	- Shared libraries to create consistent DX
