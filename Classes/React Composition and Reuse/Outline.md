@@ -59,6 +59,8 @@ tags: clayton, class, react/reuse/composition
 		- Test edge cases
 		- Stubs
 	- The above standards are made possible and better by writing isolated, composable, reusable components.
+	- "Separating state management from rendering logic improves the testability of our codebase"
+		- https://medium.com/@johnmcdowell0801/an-incremental-approach-to-clean-react-redux-development-b122bc8124cc
 * Advanced composition in React
 	- Composition patterns
 	- Composition anti-patterns
