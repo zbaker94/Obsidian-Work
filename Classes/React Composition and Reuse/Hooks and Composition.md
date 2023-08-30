@@ -25,7 +25,7 @@ import "useEffect" from "react"
 const useEffectOnce = (callback = () => {}, cleanup = () => {}) => {
 	useEffect(() => {
 		callback();
-		return cleanup() 
+		return cleanup 
 	}, [])
 }
 ```
