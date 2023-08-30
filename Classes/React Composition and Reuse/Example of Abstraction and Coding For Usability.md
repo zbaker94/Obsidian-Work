@@ -121,7 +121,7 @@ const CounterButton = ({action}) => {
 			return console.error(error)
 		}
 
-		const {callback} = actionLookup[action]?.callback
+		const callback = actionLookup[action]?.callback
 		
 		setCounterValue(prev => {
 			const newValue = callback(prev)
