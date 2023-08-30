@@ -168,7 +168,7 @@ In this case you may approach the change in one of the following ways.
 	- This is tricky because it enforces [[Coding/Principles/Separation of Concerns|Separation of Concerns]] while at the same time giving a potential developer down the line additional cognitive load when determining which component to use.
 - Add a new string prop to the `<CounterButton />`  component for when you want to log something.
 
-Given these options, the best solution given our current situation is likely number 3. Not only will it solve the current use case, it can also be used by the other buttons in addition to their actions if we need to add per-action logging down the line.
+Given these options, the best solution in our current situation is likely number 3. Not only will it solve the current use case, it can also be used by the other buttons in addition to their actions if we need to add per-action logging down the line.
 
 As part of this change, we will also need to add an optional label prop to our button for when we do not pass an action.
 
@@ -282,7 +282,7 @@ const CounterButton = ({action, log, label, metadata}) => {
 			return console.error(error)
 		}
 		if(action){
-			const {callback} = actionLookup[action]?.callback
+			const callback = actionLookup[action]?.callback
 		
 			setCounterValue(prev => {
 				const newValue = callback(prev, metadata)
