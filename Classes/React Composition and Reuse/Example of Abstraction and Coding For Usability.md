@@ -337,7 +337,7 @@ We knew this was true when we added the `log` prop, and so to defend our  frag
 
 When we needed to pass more information to one of our actions, we had to express it in a way that would play nicely with the other use cases: by only conditionally adding a metadata key if the prop was present.
 
-Even the theoretical benefit of hiding the knowledge of the available actions from the parent falls apart because it still needs to know what the type of the action is (and any metadata required) to pass down as a prop. For every new action we add to modify the counter in some way, we will need to make a change in the lookup, in Counter, and probably in CounterButton if the use case is once more slightly different to the ones that came before.
+Even the theoretical benefit of hiding the knowledge of the available actions from the parent falls apart because it still needs to know what the type of the action is (and any metadata required) to pass down as a prop. For every new action we add to modify the counter in some way, we will need to make a change in the lookup, in Counter, and probably in CounterButton if the use case is once more than slightly different to the ones that came before.
 
 This is where we finally get into truly layered architecture.
 
