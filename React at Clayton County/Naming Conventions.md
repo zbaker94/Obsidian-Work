@@ -20,17 +20,20 @@ const defendantsList = []; ❌
 
 const pendingUpdateList = [] ✔️
 const pendingUpdates = [] ❌
+
 ```
 
 ### Components
 [[Functional Components]] can be assigned to variables just like any other value (they're just functions). When doing so, it is important to PascalCase the name no matter what.
 
 ```jsx
-const Component = <></>; ✔️
-const component = <></>; ❌
+const Component = () => <></>; ✔️
+const component = () => <></>; ❌
 
-const ComponentToRender = <></>; ✔️
-const componentToRender = <></>; ❌
+const ComponentToRender = () => <></>; ✔️
+const componentToRender = () => <></>; ❌
+
+const notAComponent = <></>; ✔️
 ```
 
 # File Structure
