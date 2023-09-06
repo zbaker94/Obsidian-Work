@@ -41,4 +41,4 @@ const notAComponent = <></>; ✔️
 Folders should generally contain an index.js or index.jsx file and be named the same as the variable that their index exports. To this end, index files should almost always only export a single value or object. 
 
 #### For Components 
-The index file should export a component that accepts any props and calls any hooks needed to perform the business logic the component requires. This Renderer component should then render 😲 another component that handles the layout and actual display (see [[Best practices for balancing customization with configuration and ensuring reusability#Renderers and Components|Renderers and Components (Container and Layout components)]]).  
+The index file should export a component that accepts any props and calls any hooks needed to perform the business logic the component requires. This Renderer component should then render 😲 another component that handles the layout and actual display (see [[Best practices for balancing customization with configuration and ensuring reusability#Renderers and Components|Renderers and Components (Container and Layout components)]].  
