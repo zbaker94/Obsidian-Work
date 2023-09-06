@@ -23,7 +23,7 @@ You may be noticing a trend. We now have 3 places where the users data is needed
 ##### answer
 Great news! we can now change our code to fetch just the notifications from the `Notifications` component! We still have to keep the user data at the top level and pass it around, though...
 
-
+#
 The last example may cause you to think that the best solution to this headache is to make every atomic section of the ui call its own endpoint. We would have a call for 
 - User Data
 - Navigation
@@ -33,7 +33,7 @@ Each within only the component that uses them.
 
 But wait, we still need to provide the profile image to `CreateNewPost` and we most certainly want to avoid redundant fetches. So what, then? Do we make a separate endpoint just for the profile image?
 
-While this approach may work for some apps and while also technologies like [[GraphQL]] and [[tRPC]] exist, generally, this approach is a maintenance nightmare and breaks down once components need to fetch and refetch the same data.
+While this lowest common denominator approach may work for some apps. Furthrtmore, while technologies like [[GraphQL]] and [[tRPC]] exist, generally, this approach is a maintenance nightmare and breaks down once non-sibling components need to fetch and refetch the same data.
 
 This is where [[React Query]] comes in.
 
@@ -43,7 +43,7 @@ This means we can have whatever shape of data we need from any number of externa
 
 Going back to our example, we can setup our data flow like so:
 ![[Pasted image 20230830104645.png]]
-In this way, we can design our api and UI to reflect the business needs rather than the nuts and bolts of implementation. Each component that needs data from a given source can simply ask React Query for that data and if that data has already been fetched (and is not stale), the component receives it. Likewise if the data is fetching or in an error state, the component receives the relevant information so that the UI can reflect it. When the data is refetched for any reason, each consuming component is notified that the data is fetching *and* will receive the new data when it is available.
+In this way, we can design our api and UI to reflect the business needs rather than the nuts and bolts of implementation. Each component that needs data from a given source can simply ask React Query for that data and if that data has already been fetched (and is not stale), the component receives it. Likewise, if the data is fetching or in an error state, the component receives the relevant information so that the UI can reflect it. When the data is refetched for any reason, each consuming component is notified that the data is fetching *and* will receive the new data when it is available.
 
 ### References:
 https://tanstack.com/query/latest/docs/react/guides/important-defaults
