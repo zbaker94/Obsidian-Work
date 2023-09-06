@@ -45,5 +45,16 @@ Going back to our example, we can setup our data flow like so:
 ![[Pasted image 20230830104645.png]]
 In this way, we can design our api and UI to reflect the business needs rather than the nuts and bolts of implementation. Each component that needs data from a given source can simply ask React Query for that data and if that data has already been fetched (and is not stale), the component receives it. Likewise, if the data is fetching or in an error state, the component receives the relevant information so that the UI can reflect it. When the data is refetched for any reason, each consuming component is notified that the data is fetching *and* will receive the new data when it is available.
 
+```jsx
+const useTodosByID = (id) => useQuery(['todos', {id}], () => fetchFunction(id))
+
+const useTodosByUserID = (userID) => useQuery(['todos', {userID}], () => fetchFunction(userID))
+
+const useTodos = () => useQuery(['todos'], fetchFunction)
+
+invalidateQueries('todos')
+
+```
+
 ### References:
 https://tanstack.com/query/latest/docs/react/guides/important-defaults
