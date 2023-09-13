@@ -6,7 +6,6 @@ Job's surface default scaling: 200%
 ### IT HR Email 
 IT HR Sick email:  email it.hr@Claytoncountyga.gov
 
-### Warrant Summary Search Requirements
-- 
+
 
 
