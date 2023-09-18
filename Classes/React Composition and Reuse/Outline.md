@@ -21,6 +21,7 @@ tags: clayton, class, react/reuse/composition
 * [[Hooks and Composition]]
 * [[Layered Architecture|Layered architecture / incremental abstractions]]
 * [[Example of Abstraction and Coding For Usability]]
+* [[Communication]]
 * **Benefits of shared component libraries**
 	- Shared libraries to create consistent UX
 	- Shared libraries to create consistent DX
