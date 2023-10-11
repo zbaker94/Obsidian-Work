@@ -1,4 +1,43 @@
- --SQL ran to get things working on test
+ -- SQL From Ric
+ ```SQL
+ INSERT INTO document.Action_CoreObject ( ActionID, CoreObjectID) Values (22, 5)
+
+INSERT INTO document.Action_CoreObject ( ActionID, CoreObjectID) Values (23,6)
+
+INSERT INTO document.Action_CoreObject ( ActionID, CoreObjectID) Values (24,5)
+
+INSERT INTO document.Action_CoreObject ( ActionID, CoreObjectID) Values (25, 5)
+
+​
+
+​
+
+INSERT INTO Document.ACTION_Report(ActionID, ReportID, ReportVersion) Values (22, 9, 1)
+
+INSERT INTO Document.ACTION_Report(ActionID, ReportID, ReportVersion) Values (23, 8, 1)
+
+INSERT INTO Document.ACTION_Report(ActionID, ReportID, ReportVersion) Values (24, 22, 1)
+
+INSERT INTO Document.ACTION_Report(ActionID, ReportID, ReportVersion) Values (25, 19, 1)
+
+​
+
+​
+
+INSERT INTO document.Report_IndexingValue ( IndexingValueID, ReportID, Deleted, FieldID) Values(8, 11, 0, 1)
+
+INSERT INTO document.Report_IndexingValue ( IndexingValueID, ReportID, Deleted, FieldID) Values(8, 15, 0, 1)
+
+INSERT INTO document.Report_IndexingValue ( IndexingValueID, ReportID, Deleted, FieldID) Values(8, 14, 0, 1)
+
+INSERT INTO document.Report_IndexingValue ( IndexingValueID, ReportID, Deleted, FieldID) Values(8, 8, 0, 1)
+
+INSERT INTO document.Report_IndexingValue ( IndexingValueID, ReportID, Deleted, FieldID) Values(5, 23,0,1)
+
+INSERT INTO document.Report_IndexingValue ( IndexingValueID, ReportID, Deleted, FieldID) Values(4, 23, 0, 1)
+```
+ 
+--SQL ran to get things working on test
 ```SQL
 CREATE OR ALTER  PROCEDURE Document.GetWarrantApprovedValues
 
