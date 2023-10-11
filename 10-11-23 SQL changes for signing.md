@@ -1,4 +1,4 @@
- -- SQL From Ric
+ -- SQL From Ric 
  ```SQL
  INSERT INTO document.Action_CoreObject ( ActionID, CoreObjectID) Values (22, 5)
 
@@ -61,6 +61,11 @@ END
 
 ​```
 
+-- Delete postprocess steps for CW Application associated with Warrant approved
+```SQL
+DELETE FROM [Document].[Action_Report_Postprocess] WHERE ([Action_ReportID] = '21' AND [ExchangeName] = 'attachments.exchange' AND [QueueName] = 'attachments.feithsync.standard' AND [RoutingKey] = 'attachments.feithsync.standard' AND [Ordinal] = '1' AND [ExchangeType] = 'direct') OR ([Action_ReportID] = '21' AND [ExchangeName] = 'warrant.email.exchange' AND [QueueName] = 'warrantapplication.email.queue' AND [RoutingKey] = 'warrantapplication.email.route.standard' AND [Ordinal] = '2' AND [ExchangeType] = 'direct');
+```
+
 ```SQL
 
 -- delete criminal application as part of warrant approved action DOESNT NEED TO RUN ON DEV
@@ -93,10 +98,12 @@ BEGIN
 END
 ```
 
-​
+​-- Add Warrant application kickoff action
+```SQL
+INSERT INTO [Document].[Action] ([Name],[Created],[Alias],[StoredProcedureName]) VALUES (N'Warrant Application Finalized Action','2023-10-11 22:39:10.327',N'WarrantApplicationFinalizedKickoff',N'Document.GetWarrantApplicationValues');
+```
 
--- set CW application SP to use a detailsID centric call vs details offense
-
+-- set CW application SP to use a detailsID centric call vs details offense (if above is not needed)
 ```SQL
 UPDATE [Document].[Action] SET [StoredProcedureName] = N'Document.GetWarrantApplicationValues' WHERE [ActionID] = (SELECT TOP(1) ActionID FROM Document.[Action] WHERE [Name] LIKE 'Warrant approved by Judge')
 ```
@@ -146,11 +153,8 @@ INSERT INTO Document.Action_Report_Postprocess
 VALUES
 
 (@ActionReportID, 'attachments.exchange', 'attachments.feithsync.standard', 'attachments.feithsync.standard', 1)
-
-```
 ​
 
-```SQL
 INSERT INTO Document.Action_Report_Postprocess
 
 (Action_ReportID, ExchangeName, QueueName, RoutingKey, Ordinal)
