@@ -59,14 +59,17 @@ BEGIN
 
 END
 
-​
+​```
+
+```SQL
 
 -- delete criminal application as part of warrant approved action DOESNT NEED TO RUN ON DEV
 
---DELETE FROM [Document].[Action_Report] WHERE ([Action_ReportID] = '21');
+DELETE FROM [Document].[Action_Report] WHERE ([Action_ReportID] = '21');
 
-​
+​```
 
+```SQL
 -- CW application SP
 
 CREATE OR ALTER  PROCEDURE Document.GetWarrantApplicationValues
