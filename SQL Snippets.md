@@ -164,7 +164,7 @@
 
 		WHERE Name = 'Intake or Classification Clerk')
 
-  WHERE Email = 'kevin.moore@claytoncountyga.gov'
+  WHERE Email = 'zack.baker@claytoncountyga.gov'
 
 ​
 
