@@ -30,7 +30,7 @@
 
 		WHERE Name = 'Law Enforcement Officer')
 
-  WHERE Email = 'kevin.moore@claytoncountyga.gov'
+  WHERE Email = 'zack.baker@claytoncountyga.gov'
 
 ​
 
