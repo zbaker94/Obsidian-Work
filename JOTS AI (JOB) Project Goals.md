@@ -7,11 +7,12 @@
 	- 
 
 - Internal tool that looks at sql diff between environments and generates patch script for CI/CD
-	**
+	*API endpoint that generates 2 SQL files (or series therein) and prompts the AI with them. The AI responds with a single SQL script that will resolve the diff. Possible that we want to do a dry run of the script?*
+	- 
 
 - AI Suggested Charge Boilerplate
-	**
-
+	*Custom trained model trained on existing boilerplate correlated with charges. Accepts input of charge and generates some number of new boilerplate texts based on the charge info*
+	- 
 
 
 
