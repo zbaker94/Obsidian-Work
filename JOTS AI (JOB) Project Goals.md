@@ -11,7 +11,7 @@
 	- 
 
 - AI Suggested Charge Boilerplate
-	*Custom trained model trained on existing boilerplate correlated with charges. Accepts input of charge and generates some number of new boilerplate texts based on the charge info*
+	*Custom model trained on existing boilerplate correlated with charges. Accepts input of charge and generates some number of new boilerplate texts based on the charge info*
 	- 
 
 
