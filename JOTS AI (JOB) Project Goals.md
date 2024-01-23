@@ -7,7 +7,7 @@
 	- 
 
 - Internal tool that looks at sql diff between environments and generates patch script for CI/CD
-	*API endpoint that generates 2 SQL files (or series therein) and prompts the AI with them. The AI responds with a single SQL script that will resolve the diff. Possible that we want to do a dry run of the script?*
+	*API endpoint that takes in 2 SQL files (or series therein) and prompts the AI with them. The AI responds with a single SQL script that will resolve the diff.*
 	- 
 
 - AI Suggested Charge Boilerplate
