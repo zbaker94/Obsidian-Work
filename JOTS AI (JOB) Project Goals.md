@@ -2,7 +2,7 @@
 	*Provides help resources, basic application support, and data analysis via a chat-like interface embedded on JOTS*
 	- 
 
-- Command API that uses AI to call a sequence of events (direct accusal command -> appropriate api calls)
+- Command API that uses AI to call a sequence of events
 	*Tool has access to a list of endpoints (using the openapi spec) that describe their purpose, inputs, and outputs. The front end provides arbitrary commands to the AI which then calls the necessary endpoints in the proper order.*
 	- 
 
