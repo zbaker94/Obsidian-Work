@@ -7,8 +7,10 @@
 	- 
 
 - Internal tool that looks at sql diff between environments and generates patch script for CI/CD
+	**
 
 - AI Suggested Charge Boilerplate
+	**
 
 
 
