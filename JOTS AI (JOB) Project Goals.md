@@ -20,11 +20,18 @@
 
 - Internal tool that looks at sql diff between environments and generates patch script for CI/CD
 	*API endpoint that takes in 2 SQL files (or series therein) and prompts the AI with them. The AI responds with a single SQL script that will resolve the diff.*
-	- 
+	- Code generates Schema and Data diff between 2 envs
+	- Sends the diff files one at a time to AI
+		- AI has access to target db schema (FKs etc.)
+	- AI generates patch script with comments
+	- Code returns patch script
 
 - AI Suggested Charge Boilerplate
 	*Custom model trained on existing boilerplate correlated with charges. Accepts input of charge and generates some number of new boilerplate texts based on the charge info*
-	- 
+	- Custom model is a closed program. Must instead use Assistants API 
+	- AI has access to existing boilerplate text correlated with offense code / text
+	- Code sends prompt to model including offense code / text
+	- AI uses existing data to generate arbitrary number boilerplates for input offense 
 
 
 
