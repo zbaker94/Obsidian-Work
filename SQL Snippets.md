@@ -98,7 +98,7 @@
 
 		WHERE Name = 'Judge')
 
-  WHERE Email = 'kevin.moore@claytoncountyga.gov'
+  WHERE Email = 'zack.baker@claytoncountyga.gov'
 
 ​
 
