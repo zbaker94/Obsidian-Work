@@ -166,7 +166,7 @@ In this case you may approach the change in one of the following ways.
 - Create a new `<LogCounterButton />` component for this one use case. That feels a little off to me: we’re basically going to be duplicating the button element and button styling, meaning if we change the implementation in one place we need to change it in the other place. Not DRY at all.
 	- We *could* extend the `<CounterButton />` to accept an `onClick` or `onClickSideEffect` function that is called from the built-in `onClick` so that our  `<LogCounterButton />` can take in the log message, render the `<CounterButton />`, and pass the console log as the `onClickSideEffect`
 	- This is tricky because it enforces [[Coding/Principles/Separation of Concerns|Separation of Concerns]] while at the same time giving a potential developer down the line additional cognitive load when determining which component to use.
-- Add a new string prop to the `<CounterButton />`  component for when you want to log something.
+	- Add a new string prop to the `<CounterButton />`  component for when you want to log something.
 
 Given these options, the best solution in our current situation is likely number 3. Not only will it solve the current use case, it can also be used by the other buttons in addition to their actions if we need to add per-action logging down the line.
 
