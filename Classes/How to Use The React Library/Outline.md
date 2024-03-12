@@ -9,6 +9,6 @@
 	* **Practical composition in React components**- 
 		*  [[Coding/React/Principles/Encapsulation|Encapsulation]]
 		* [[Coding/React/Principles/Abstraction|Abstraction]]
-		* [[Coding/React/Principles/Composition | Inheritance (Composition)]]
+		* [[Layered Architecture | Inheritance (Layered Architecture)]]
 		* [[Coding/React/Principles/Immutability|Immutability]]
 		* [[Coding/React/Principles/Separation of Concerns|Separation of Concerns]]
