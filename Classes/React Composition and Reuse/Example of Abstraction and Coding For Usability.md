@@ -170,7 +170,7 @@ In this case you may approach the change in one of the following ways.
 
 Given these options, the best solution in our current situation is likely number 3. Not only will it solve the current use case, it can also be used by the other buttons in addition to their actions if we need to add per-action logging down the line.
 
-As part of this change, we will also need to add an optional label prop to our button for when we do not pass an action.
+As part of this change, we will also need to add an optional "log" prop to our button for when we do not pass an action.
 
 ##### New and Improved CounterButton Component 
 ```jsx
