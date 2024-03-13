@@ -21,7 +21,6 @@
 	- ***Coding Standards***
 		- [[Naming Conventions|Naming]]
 		- Imports and Exports ([[Library Structure|Library Structure]])
-		-  Following established patterns
 		-  [[Data Flow|Data fetching and flow]]
 	- [[Form Example.excalidraw|Example form]]
 	- [[Example of Abstraction and Coding For Usability]]
